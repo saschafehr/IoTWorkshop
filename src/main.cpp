@@ -15,16 +15,6 @@ void setup()
 
   Wire.begin();
   _soilMoisureSensor.testForConnectivity();
-  // _soilMoisureSensor.ledOn();
-  // delay(1000);
-
-  // Serial.begin(115200);
-  // Wire.begin();
-
-  // Serial.println("Initializing");
-  // _leds = new LED();
-  // _leds->begin();
-  // Serial.println("Starting");
 }
 
 void loop()
@@ -36,14 +26,4 @@ void loop()
   delay(1000);
   _soilMoisureSensor.ledOff();
   delay(1000);
-
-  // Serial.println("Red");
-  // _leds->setLEDColor(255, 0, 0);
-  // delay(500);
-  // Serial.println("Green");
-  // _leds->setLEDColor(0, 255, 0);
-  // delay(500);
-  // Serial.println("Blue");
-  // _leds->setLEDColor(0, 0, 255);
-  // delay(500);
 }

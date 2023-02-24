@@ -46,11 +46,7 @@ uint16_t SoilMoisureSensor::getValue()
   while (Wire.available())
   { // slave may send less than requested
     uint8_t ADC_VALUE_L = Wire.read();
-    //  Serial.print("ADC_VALUE_L:  ");
-    //  Serial.println(ADC_VALUE_L,DEC);
     uint8_t ADC_VALUE_H = Wire.read();
-    //  Serial.print("ADC_VALUE_H:  ");
-    //  Serial.println(ADC_VALUE_H,DEC);
     ADC_VALUE = ADC_VALUE_H;
     ADC_VALUE <<= 8;
     ADC_VALUE |= ADC_VALUE_L;
